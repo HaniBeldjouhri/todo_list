@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+        .container{
+            justify-content: center;
+            align-items:center;
+            display:flex;
+        }
+        .form{
+            padding: 10px;
+            height: 30px;
+            background-color: rgb(212, 212, 212);
+            border-radius: 10px;
+        }
+        .input{
+            width: 320px;
+            height: 30px;
+            border: 0;
+            border-radius: 10px;
+            outline:0;
+        }
+        .add{
+            width: 100px;
+            height: 30px;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .add:hover{
+            color: white;
+            background-color: rgb(156, 154, 154);
+        }
+        .tasks{
+            display: block;
+        }
+        .task{
+            padding: 10px;
+            height: 30px;
+            background-color: rgb(212, 212, 212);
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .Delete{
+            width: 100px;
+            height: 30px;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+     
+    </style>
+    
+
+    <div class="container">
+        <div class="form"> 
+            <input type="text" class="input" > 
+            <input type="submit" value="add tasks" class="add">
+        </div>
+    </div>
+    <div class="tasks"></div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
